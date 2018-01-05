@@ -1,0 +1,32 @@
+{
+  "name": "codeceptjs-nightmare-harness",
+  "version": "1.0.0",
+  "description": "Simple test harness for codeceptjs-nightmare tests",
+  "main": "codecept.json",
+  "scripts": {
+    "test": "codeceptjs run --reporter mochawesome"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mallorym/codeceptjs-nightmare-harness.git"
+  },
+  "keywords": [
+    "codeceptjs",
+    "nightmare",
+    "automation",
+    "javascript"
+  ],
+  "author": "Mallory Mooney",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mallorym/codeceptjs-nightmare-harness/issues"
+  },
+  "homepage": "https://github.com/mallorym/codeceptjs-nightmare-harness#readme",
+  "devDependencies": {
+    "codeceptjs": "^1.0.2",
+    "codeceptjs-nightmare": "^1.1.0",
+    "mochawesome": "^3.0.1",
+    "nightmare": "^2.10.0",
+    "nightmare-upload": "^0.1.1"
+  }
+}
