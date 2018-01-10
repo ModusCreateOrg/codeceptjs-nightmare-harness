@@ -2,6 +2,9 @@ version: '3'
 services:
   codeceptjs:
     image: codeception/codeceptjs
+    environment:
+      - CODECEPT_ARGS=--reporter mochawesome
     volumes:
       - .:/tests
+    command: bash -c "cd .. && cd /tests && npm install && bash ../codecept/docker/run.sh"
     container_name: docker-nightmare
