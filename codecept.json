@@ -1,0 +1,28 @@
+{
+  "output": "./output",
+  "helpers": {
+    "Nightmare": {
+      "url": "https://moduscreate.com/",
+      "show": true,
+      "restart": false
+    }
+  },
+  "include": {
+    "modusHomePage": "./pages/modusHomePage.js",
+    "modusEmailModalFragment": "./fragments/modusEmailModal.js",
+    "navigateHomePageStep": "./steps/navigateHomePageStep.js"
+  },
+  "mocha": {
+    "reporterOptions": {
+        "reportDir": "output",
+        "reportFilename": "testReport",
+        "quiet": true
+    }
+  },
+  "bootstrap": false,
+  "teardown": null,
+  "hooks": [],
+  "tests": "./tests/*_test.js",
+  "timeout": 10000,
+  "name": "codeceptjs-nightmare-harness"
+}
