@@ -61,7 +61,8 @@ greater flexibility in how you organize tests.
 ```javascript
 Scenario('Navigate to Home Page @home', () => {});
 ```
-To run based on tags, execute `codeceptjs run --grep @tagName`. [CodeceptJS](http://codecept.io/advanced/) also provides more advanced regex filtering.
+To run based on tags, execute `codeceptjs run --grep @tagName`. [CodeceptJS](http://codecept.io/advanced/)
+also provides more advanced regex filtering.
 
 * `--grep (?=.*@smoke2)(?=.*@smoke3)` - run tests with @smoke2 and @smoke3 in name
 * `--grep @smoke2|@smoke3` - run tests with @smoke2 or @smoke3 in name
@@ -72,3 +73,10 @@ To run based on tags, execute `codeceptjs run --grep @tagName`. [CodeceptJS](htt
 CodeceptJS offers a few different [reporter options](http://codecept.io/reports/).
 This repo is set up with [mochawesome](https://github.com/adamgruber/mochawesome),
 a tool for generating HTML reports.
+
+### Docker-Compose
+This project comes with the ability to run tests in a Docker container via
+docker-compose. It uses the Docker image from the [Codeception team](https://hub.docker.com/r/codeception/codeceptjs/),
+and provides all of the necessary dependencies to run tests.
+
+Run `docker-compose up -d codeceptjs` then `docker-compose run --rm codeceptjs`.

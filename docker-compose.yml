@@ -1,0 +1,7 @@
+version: '3'
+services:
+  codeceptjs:
+    image: codeception/codeceptjs
+    volumes:
+      - .:/tests
+    container_name: docker-nightmare
