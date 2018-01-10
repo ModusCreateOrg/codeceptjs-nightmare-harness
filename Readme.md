@@ -36,7 +36,7 @@ Once everything is installed, you can simply execute `npm tests` to run
 the existing test. The `codecept.json` file houses the configurations needed to
 run tests. Here is a portion of that file with notes on important features:
 
-```json
+```javascript
 {
   "output": "./output", // screenshots for failures
   "helpers": {
