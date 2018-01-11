@@ -3,8 +3,8 @@
   "helpers": {
     "Nightmare": {
       "url": "https://moduscreate.com/",
-      "show": true,
-      "restart": false
+      "show": false,
+      "restart": false,
     }
   },
   "include": {
@@ -14,9 +14,8 @@
   },
   "mocha": {
     "reporterOptions": {
-        "reportDir": "output",
-        "reportFilename": "testReport",
-        "quiet": true
+        "reportDir": "./output",
+        "reportFilename": "testReport"
     }
   },
   "bootstrap": false,

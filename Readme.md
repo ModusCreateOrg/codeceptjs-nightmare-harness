@@ -80,6 +80,3 @@ docker-compose. It uses the Docker image from the [Codeception team](https://hub
 and provides all of the necessary dependencies to run tests.
 
 Run `docker-compose up -d codeceptjs` then `docker-compose run --rm codeceptjs`.
-
-**Note**: the codeception/codeceptjs image is missing the mochawesome package.
-This project's docker-compose file has a temporary fix until the image is updated.
