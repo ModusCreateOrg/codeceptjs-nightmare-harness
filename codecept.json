@@ -4,7 +4,7 @@
     "Nightmare": {
       "url": "https://moduscreate.com/",
       "show": false,
-      "restart": false,
+      "restart": false
     }
   },
   "include": {
